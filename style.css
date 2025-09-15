@@ -1,25 +1,58 @@
-body{
-    font-family: "Poppins", sans-serif;
-    background-color: black;
-    
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: black;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: white;
-    padding: 20px;
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  color: white;
+  padding: 20px;
+  flex-wrap: wrap; /* permite responsivo */
 }
 
-.img{
-    width: 100%;
-    max-width: 75vh;
-    height: auto;
-    max-height: 95vh;
+/* Agora o fundo e padding ficam no container, não na imagem */
+.imagem {
+  padding: 10px;
+  background: radial-gradient(circle, rgb(70, 70, 70) 0%, rgb(30, 30, 30) 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.texto{
-    max-width: 75vh;
-    width: 100%;
+.imagem img {
+  width: 100%;
+  max-width: 75vh;
+  max-height: 85vh;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 75vh;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 5vh;
+  margin: 0 0 10px 0;
+}
+
+.descricao {
+  font-size: 2vh;
+  margin: 0 0 15px 0;
+}
+
+.detalhes {
+  font-size: 2vh;
+  padding-left: 20px;
+  margin: 0;
 }
