@@ -10,10 +10,9 @@ body {
   gap: 20px;
   color: white;
   padding: 20px;
-  flex-wrap: wrap; /* permite responsivo */
+  flex-wrap: wrap;
 }
 
-/* Agora o fundo e padding ficam no container, não na imagem */
 .imagem {
   padding: 10px;
   background: radial-gradient(circle, rgb(70, 70, 70) 0%, rgb(30, 30, 30) 100%);
@@ -56,3 +55,4 @@ body {
   padding-left: 20px;
   margin: 0;
 }
+
